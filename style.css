@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/41db98a0552f209b42ce462f1a8f01b4.jpg');
+    background-position: center;
+}
+
+.centralizar {
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.embaixo {
+    display: flex;
+    flex-direction: row;
+}
+
+.alterar {
+    cursor: pointer;
+    padding: 20px 100px;
+    border-radius: 5px;
+    text-decoration: none; 
+    color: black; 
+    background-color: lightgray; 
+    display: inline-block;
+    margin: 5px;
+    position: relative; 
+}
+
+.alterar-nao::before {
+    content: "Não";
+}
+
+.alterar-nao:hover::before {
+    content: "Sim";
+}
+
+.alterar:hover {
+    background-color: pink;
+}
+
+h1 {
+    font-size: 100px;
+    color: rgb(240, 237, 240);
+}
